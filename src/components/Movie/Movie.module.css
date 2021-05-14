@@ -1,0 +1,73 @@
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 5px lightgray;
+  position: relative;
+  width: 200px;
+  min-height: 300px;
+  margin: 0.5em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container > * {
+  max-width: 100%;
+}
+
+.word {
+  margin: 0.3em 0;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.rate {
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+}
+
+@media screen and (max-width: 442px) and (min-width: 305px) {
+  .container {
+    width: 300px;
+    min-height: 450px;
+  }
+  img {
+    width: 300px;
+    height: 450px;
+  }
+  .card {
+    width: 300px;
+    height: 450px;
+  }
+}
+.card {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 200px;
+  min-height: 300px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  padding: 0.5em;
+  display: grid;
+  place-items: center;
+}
+
+.hidden {
+  display: none;
+}
+.cardtitle,
+.cardrelease,
+.cardrate,
+.cardvotecount,
+.cardpopularity {
+  margin: 0.5em;
+  text-align: center;
+}

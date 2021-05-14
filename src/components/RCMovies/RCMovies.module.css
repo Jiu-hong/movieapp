@@ -1,0 +1,16 @@
+body {
+  width: 100vw;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+.container {
+  width: 98vw;
+  margin: auto;
+  padding-top: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

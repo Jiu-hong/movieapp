@@ -1,0 +1,100 @@
+.container {
+  width: 95vw;
+  margin: auto;
+  padding-top: 3em;
+}
+
+.overview {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.6em;
+  margin: 0.5em 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+strong {
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0.5em 0;
+}
+
+.companylogo {
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 5px lightgray;
+  margin: 0 1em;
+  padding: 0.5em;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.slideimg {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.slideprev,
+.slidenext {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.slidenext {
+  left: unset;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.slideprev:hover,
+.slidenext:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: space-around;
+}
+
+.image:hover {
+  box-shadow: 0px 0px 20px lightgray;
+}
+
+.seperator {
+  border: 1px solid green;
+
+  margin-bottom: 1em;
+}
